@@ -4,10 +4,10 @@
 
 /* betty style doc for function main goes there */
 /**
- * @main -  Positive or negative number
+ * main - Entry point
  * Prints out a statement if the number is
  * negative, positive or zero.
- * @return int 
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
