@@ -3,7 +3,12 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
-
+/**
+ * @main -  Positive or negative number
+ * Prints out a statement if the number is
+ * negative, positive or zero.
+ * @return int 
+ */
 int main(void)
 {
 	int n;
