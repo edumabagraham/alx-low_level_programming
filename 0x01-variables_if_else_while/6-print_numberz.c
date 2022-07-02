@@ -10,10 +10,11 @@ char number = '0';
 
 while (number <= '9')
 {
-printf("%d", (number - 48));
+number - 48;
+putchar(number);
 number++;
 }
-printf("\n");
+putchar('\n');
 return (0);
 }
 
