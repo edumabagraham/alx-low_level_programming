@@ -12,6 +12,8 @@ for (first = '0'; first <= '8'; first++)
 {
 for (second = '1'; second <= '9'; second++)
 {
+if (second > first)
+{
 putchar(first);
 putchar(second);
 if (first != '8' || second != '9')
@@ -21,6 +23,8 @@ putchar(' ');
 }
 }
 }
+}
 putchar('\n');
 return (0);
 }
+
