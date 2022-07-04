@@ -16,6 +16,8 @@ for (k = '0'; k <= '9'; k++)
 {
 for (l = '0'; l <= '9'; l++)
 {
+if (k != '0' && l != '0')
+{
 putchar(i);
 putchar(j);
 putchar(' ');
@@ -27,6 +29,8 @@ if (i != '9' || j != '8' || k != '9' || l != '9')
 putchar(',');
 putchar(' ');
 }
+}
+
 }
 }
 }
