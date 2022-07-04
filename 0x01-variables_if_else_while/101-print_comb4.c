@@ -7,11 +7,14 @@
 
 int main(void)
 {
-for (int i = '0'; i <= '7'; i++)
+int i;
+int j;
+int k;
+for (i = '0'; i <= '7'; i++)
 {
-for (int j = '1'; j <= '8'; j++)
+for (j = '1'; j <= '8'; j++)
 {
-for (int k = '2'; k <= '9'; k++)
+for (k = '2'; k <= '9'; k++)
 {
 if (k > i && k > j && j > i)
 {
