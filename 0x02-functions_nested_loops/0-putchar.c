@@ -6,7 +6,7 @@
  *
  * Return: Always 0 (Success)
  */
-int putchar(void)
+int printSomething(void)
 {
 _putchar('_');
 _putchar('u');
