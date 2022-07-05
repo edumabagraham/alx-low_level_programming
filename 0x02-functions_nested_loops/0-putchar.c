@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * printSomething - prints out the character using
+ * main - prints out the character using
  * _putchar function from the header file.
  *
  * Return: Always 0 (Success)
