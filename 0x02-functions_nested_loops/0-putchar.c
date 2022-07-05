@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * putchar - prints out the character using
+ * printSomething - prints out the character using
  * _putchar function from the header file.
  *
  * Return: Always 0 (Success)
@@ -15,5 +15,6 @@ _putchar('c');
 _putchar('h');
 _putchar('a');
 _putchar('r');
+_putchar('\n');
 return (0);
 }
