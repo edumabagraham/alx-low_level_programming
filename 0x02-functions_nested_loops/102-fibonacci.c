@@ -17,12 +17,12 @@ long int fib = 0;
 printf("%ld, ", previous);
 printf("%ld, ", current);
 
-for (i = 3; i < 50; i++)
+for (i = 3; i <= 50; i++)
 {
 fib = previous + current;
 previous = current;
 current = fib;
-if (i != 49)
+if (i != 50)
 {
 printf("%ld, ", fib);
 }
