@@ -6,42 +6,29 @@
  */
 int main(void)
 {
-int i = '0';
+int i, j;
 
-while (i <= '9')
+for (i = 0; i <= 99; i++)
 {
-int j = '0';
-while (j <= '9')
+for (j = 0; j <= 99; j++)
 {
-int k = '0';
-while (k <= '8')
+if (j > i)
 {
-int l = '0';
-while (l <= '9')
-{
-if (k != '0' || l != '0')
-{
-putchar(i);
-putchar(j);
+putchar((i / 10) + '0');
+putchar((i % 10) + '0');
 putchar(' ');
-putchar(k);
-putchar(l);
-if (i != '9' || j != '8' || k != '9' || l != '9')
+putchar((j / 10) + '0');
+putchar((j % 10) + '0');
+
+if (i != 98 || j != 99)
 {
 putchar(',');
 putchar(' ');
 }
 }
-l++;
-}
-k++;
-}
-j++;
-}
-i++;
-}
 
-
-putchar('\n');
+}
+}
 return (0);
 }
+

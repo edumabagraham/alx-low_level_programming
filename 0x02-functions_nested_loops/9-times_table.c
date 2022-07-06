@@ -17,6 +17,7 @@ int j = 0;
 while (j <= 9)
 {
 int product = (i * j);
+
 if (product == 0)
 {
 _putchar('0' + product);
