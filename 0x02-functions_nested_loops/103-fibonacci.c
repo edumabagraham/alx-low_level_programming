@@ -8,13 +8,13 @@
 
 int main(void)
 {
-int sum = 0;
-int fib = 0;
-int previous = 0;
-int current = 1;
+long int sum = 0;
+long int fib = 0;
+long int previous = 0;
+long int current = 1;
 int i;
 
-for (i = 0; i < 10; i++)
+for (i = 0; i < 34; i++)
 {
 fib = previous + current;
 if ((fib % 2) == 0)
@@ -24,6 +24,6 @@ sum += fib;
 previous = current;
 current = fib;
 }
-printf("%d\n", sum);
+printf("%ld\n", sum);
 return (0);
 }
