@@ -10,7 +10,7 @@
 
 void times_table(void)
 {
-int count = 9;
+int count = 2100;
 int i, j;
 for (i = 0; i <= count; i++)
 {
@@ -32,7 +32,7 @@ else
 _putchar((product / 10) + '0');
 }
 
-if (j != 9)
+if (j != count)
 {
 _putchar(',');
 _putchar(' ');
