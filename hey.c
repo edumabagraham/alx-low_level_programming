@@ -2,13 +2,12 @@
 
 
 int main(void){
-int i;
-i =9;
+    int i;
 
-while(i--)
-{
-printf("%d",i);
-}
+    for (i = 48; i < 58; i++)
+    {
+        printf("%c", i);
+    }
 
-return (0) ;
+    return (i);
 }
