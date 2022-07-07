@@ -3,8 +3,8 @@
 /**
 * mul - Add two numbers
 *
-* @i: argument 1
-* @j: argument 2
+* @a: argument 1
+* @b: argument 2
 *
 * Return: The sum
 */
