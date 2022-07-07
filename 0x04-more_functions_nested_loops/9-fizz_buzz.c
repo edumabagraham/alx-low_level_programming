@@ -22,6 +22,10 @@ else if (i % 5 == 0)
 {
 printf("Buzz ");
 }
+else if (i == 100)
+{
+printf("%d",i);
+}
 else
 {
 printf("%d ", i);
