@@ -14,13 +14,7 @@ _putchar('\n');
 }
 else
 {
-while (n--)
-{
-_putchar('#');
-_putchar('#');
-_putchar('\n');
-}
-_putchar('\n');
+
 }
 }
 
