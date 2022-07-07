@@ -1,20 +1,14 @@
-if (n < 0)
+#include <stdio.h>
+
+
+int main(void){
+int i;
+i =9;
+
+while(i--)
 {
-    while (n <= 98)
-    {
-        if (n < 10)
-        {
-            _putchar(n + '0')
-        }
-        else
-        {
-            _putchar()
-        }
-    }
+printf("%d",i);
 }
 
-else if (n >= 98)
-{
-    while (n >= 98)
-    {
-    }
+return (0) ;
+}

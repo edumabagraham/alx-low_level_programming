@@ -9,10 +9,10 @@
 
 int main(void)
 {
-long int previous = 1;
-long int current = 2;
+unsigned long long int previous = 1;
+unsigned long long int current = 2;
 int i;
-long int fib = 0;
+unsigned long long int fib = 0;
 printf("%ld, ", previous);
 printf("%ld, ", current);
 
