@@ -2,6 +2,7 @@
   "C_Cpp.errorSquiggles": "Disabled",
   "files.associations": {
     "type_traits": "c",
-    "algorithm": "c"
+    "algorithm": "c",
+    "main.h": "c"
   }
 }
