@@ -17,6 +17,7 @@ while (str[length] != '\0')
 {
 length++;
 }
+
 half = (length / 2);
 if (length % 2 == 0)
 {
@@ -25,6 +26,7 @@ while (str[half] != '\0')
 _putchar(str[half]);
 half++;
 }
+_putchar('\n');
 }
 else
 {
@@ -34,5 +36,6 @@ while (str[half] != '\0')
 _putchar(str[half]);
 half++;
 }
+_putchar('\n');
 }
 }
