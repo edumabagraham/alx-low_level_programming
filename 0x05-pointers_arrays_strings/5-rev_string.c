@@ -20,14 +20,14 @@ i++;
 }
 
 j = 0;
-i --;
+i--;
 while (i > j)
 {
 temp = s[i];
 s[i] = s[j];
 s[j] = temp;
-printf("j: %d\ti: %d\t 's[%d]': %c\t 's[%d]': %c\n", j, i, j, s[j], i , s[i]);
 j++;
 i--;
 }
 }
+
