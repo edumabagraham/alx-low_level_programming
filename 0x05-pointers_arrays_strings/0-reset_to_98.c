@@ -1,12 +1,10 @@
 /**
- * reset_to_98 - updates the value it points to to 98
- * @*n: pointer to an address
- * @n: a pointer
- *
- * Description: function that takes a pointer to an int as parameter
- * and updates the value it points to to 98
- * Return: none
+ * reset_to_98 - Takes in a pointer and changes the
+ * value
+ * @n: A pointer variable
+ * Return - nothing
  */
+
 void reset_to_98(int *n)
 {
 *n = 98;
