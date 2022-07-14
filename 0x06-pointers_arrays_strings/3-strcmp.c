@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _strcmp - Concantenates two strings
@@ -12,33 +13,38 @@
 
 int _strcmp(char *s1, char *s2)
 {
-if (s1 == s2)
+
+/**Value of s1*/
+int s1_val = 0, s2_val = 0, i = 0, j = 0;
+while (s1[i] != '\0')
+{
+s1_val += s1[i];
+i++;
+}
+printf("%d\n", s1_val);
+
+/**Value of s2*/
+while (s2[j] != '\0')
+{
+s2_val = s2[j];
+j++;
+}
+
+if (s1_val == s2_val)
 {
 return (0);
 }
 
-else if (s1 < s2)
+else if (s1_val < s2_val)
 {
 return (-15);
 }
 
-else if (s1 > s2)
+else 
 {
 return (15);
 }
-
-else if (s2 > s1)
-{
-return (-15);
 }
-
-else
-{
-return (15);
-}
-
-}
-
 
 
 
