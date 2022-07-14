@@ -38,7 +38,7 @@ else if (s1_val < s2_val)
 return (-15);
 }
 
-else 
+else
 {
 return (15);
 }
