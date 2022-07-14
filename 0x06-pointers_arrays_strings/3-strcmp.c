@@ -18,12 +18,14 @@ while (s1[s1_len] != '\0')
 {
 s1_len++;
 }
+s1_len++; /*adds 1 for the null terminator*/
 
 /**Length of s2*/
 while (s2[s2_len] != '\0')
 {
 s2_len++;
 }
+s2_len++; /*adds 1 for the null terminator*/
 
 if (s1_len == s2_len)
 {
