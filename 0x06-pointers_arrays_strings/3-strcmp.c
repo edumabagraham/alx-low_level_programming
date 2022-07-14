@@ -12,25 +12,12 @@
 
 int _strcmp(char *s1, char *s2)
 {
-/**Length of s1*/
-int s1_len = 0, s2_len = 0;
-while (s1[s1_len] != '\0')
-{
-s1_len++;
-}
-
-/**Length of s2*/
-while (s2[s2_len] != '\0')
-{
-s2_len++;
-}
-
-if (s1_len == s2_len)
+if (s1 == s2)
 {
 return (0);
 }
 
-else if (s1_len < s2_len)
+else if (s1 < s2)
 {
 return (-15);
 }
@@ -40,6 +27,7 @@ else
 return (15);
 }
 }
+
 
 
 
