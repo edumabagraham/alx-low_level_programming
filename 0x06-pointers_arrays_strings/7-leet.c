@@ -9,35 +9,19 @@
 
 char *leet(char *str)
 {
-int i = 0;
+char *alpha = "aAeEoOtTlL";
+char *num = "4433007711";
+int i, j;
 
-for ( ; str[i] != '\0'; i++)
+for (i = 0; str[i] != '\0'; i++)
 {
-if (str[i] == 'a' || str[i] == 'A')
+for (j = 0; alpha[j] != '\0'; j++)
 {
-str[i] = '4';
-}
-else if (str[i] == 'e' || str[i] == 'E')
+if (str[i] == alpha[j])
 {
-str[i] = '3';
-}
-else if (str[i] == 'o' || str[i] == 'O')
-{
-str[i] = '0';
-}
-else if (str[i] == 't' || str[i] == 'T')
-{
-str[i] = '7';
-}
-else if (str[i] == 'l' || str[i] == 'L')
-{
-str[i] = '1';
-}
-else
-{
-str[i] = str[i];
+str[i] = num[j];
 }
 }
-
+}
 return (str);
 }
