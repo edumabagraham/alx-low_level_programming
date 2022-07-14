@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * _strcmp - Concantenates two strings
@@ -21,12 +20,11 @@ while (s1[i] != '\0')
 s1_val += s1[i];
 i++;
 }
-printf("%d\n", s1_val);
 
 /**Value of s2*/
 while (s2[j] != '\0')
 {
-s2_val = s2[j];
+s2_val += s2[j];
 j++;
 }
 
