@@ -12,10 +12,16 @@
 
 void print_array(int *a, int n)
 {
-int i;
+int i,j = 0;
 int *p;
 p = a;
-if (n > 0)
+
+while (j < n)
+{
+j++;
+}
+
+if (n == j)
 {
 for (i = 0; i < n; i++)
 {
