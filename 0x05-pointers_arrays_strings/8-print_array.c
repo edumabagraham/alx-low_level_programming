@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * print_array - Prints elements in an array
@@ -12,7 +13,7 @@
 
 void print_array(int *a, int n)
 {
-int i,j = 0;
+int i, j = 0;
 int *p;
 p = a;
 
@@ -31,8 +32,9 @@ printf("%d, ", *p);
 }
 else
 {
-printf("%d\n", *p);
+printf("%d", *p);
 }
+_putchar('\n');
 p++;
 }
 }
