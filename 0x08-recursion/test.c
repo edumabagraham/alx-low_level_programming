@@ -8,19 +8,20 @@
  * Return - nothing
  */
 
-void _puts_recursion(char *s)
+int add(int n)
 {
-    // if (*s == '\0')
-    // {
-    //     _putchar('\n');
-    //     return;
-    // }
-    putchar(*s);
-    // _puts_recursion(s + 1);
+    if (n < 20)
+    {
+    ++n;
+    return (add(n));
+    }
+    
 }
 
 int main(void)
 {
-    _puts_recursion("Puts with recursion");
+    int value;
+    value = add(10);
+    printf("%d\n",value);
     return (0);
 }
