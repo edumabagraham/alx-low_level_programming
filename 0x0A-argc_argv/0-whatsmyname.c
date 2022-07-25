@@ -1,6 +1,14 @@
 #include <stdio.h>
 
-int main(int argc, char *agrv[])
+/**
+ * main - Entry point
+ * @argc: number of argument passed to the program
+ * @argv: one dimensional array of strings passed
+ * as arguments to the program
+ *
+ * Return: 0
+ */
+int main(int argc, char *argv[])
 {
 int i;
 for (i = 0; i < argc; i++)
