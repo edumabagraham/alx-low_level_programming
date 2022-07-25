@@ -6,14 +6,10 @@
  * @argv: one dimensional array of strings passed
  * as arguments to the program
  *
- * Return: 0
+ * Return: 0 on success
  */
-int main(int argc, char *argv[])
+int main(int __attribute__((unused)) argc, char *argv[])
 {
-int i;
-for (i = 0; i < argc; i++)
-{
-printf("%s\n", agrv[i]);
-}
+printf("%s\n", argv[0]);
 return (0);
 }
