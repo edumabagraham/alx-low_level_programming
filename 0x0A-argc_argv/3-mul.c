@@ -15,20 +15,21 @@ int main(int __attribute__((unused)) argc, char *argv[])
 int i;
 if (argc > 1)
 {
-i = argv[1] * argv[2];
+i = _atoi(argv[1]) * _atoi(argv[2]);
 printf("%d\n", i);
 }
 else
 {
-printf("Error");
+printf("Error\n");
 return (1);
 }
+
 return (0);
 }
 
 
 /**
- * atoi - converts a string to an
+ * _atoi - converts a string to an
  * integer
  *
  * @s:string argument
@@ -37,7 +38,39 @@ return (0);
 
 int _atoi(char *s)
 {
+int i, sign, num, digit, flag;
+sign = 0;
+num = 0;
+flag = 0;
 
+for (i = 0; s[i] != '\0'; i++)
+{
+if (s[i] == '-')
+{
+sign++;
+}
+
+if (s[i] >= '0' && s[i] <= '9')
+{
+digit = s[i] - 48; /** '0' ascii value**/
+if (sign % 2)
+{
+digit = -digit;
+}
+num = num * 10 + digit;
+flag = 1;
+if (s[i + 1] < '0' || s[i + 1] > '9')
+{
+break;
+}
+}
+}
+
+if (flag == 0)
+{
+return (0);
+}
+return (num);
 }
 
 
