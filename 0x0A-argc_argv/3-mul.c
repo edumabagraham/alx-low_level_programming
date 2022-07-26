@@ -13,11 +13,12 @@ int _atoi(char *s);
 int main(int __attribute__((unused)) argc, char *argv[])
 {
 int i;
-if (argc > 1)
+if (argc > 1 && argc != 2)
 {
 i = _atoi(argv[1]) * _atoi(argv[2]);
 printf("%d\n", i);
 }
+
 else
 {
 printf("Error\n");
