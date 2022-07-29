@@ -34,9 +34,9 @@ else
 {
 printf("0");
 }*/
-
-int i = _atoi(argv[1]);
-printf("%d", i);
+int j = 1;
+char i = argv[j];
+printf("%c", i);
 
 return (0);
 }
