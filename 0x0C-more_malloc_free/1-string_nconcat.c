@@ -19,7 +19,7 @@ unsigned int s2_len = _strlen(s2, 0);
 unsigned int len = 0, i;
 char *s;
 
-if (s2_len == n)
+if (n >= s2_len)
 {
 len = s1_len + s2_len;
 }
@@ -30,13 +30,18 @@ len = s1_len + n;
 
 
 s = malloc(len *sizeof(*s));
+if (s == NULL)
+{
+return (NULL);
+}
+
 
 for (i = 0; s1[i] != '\0'; i++)
 {
 s[i] = s1[i];
 }
 
-if (s2_len == n)
+if (n >= s2_len)
 {
 for (i = 0; s2[i] != '\0'; i++)
 {
