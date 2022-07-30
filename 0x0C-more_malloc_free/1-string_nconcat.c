@@ -14,6 +14,11 @@ int _strlen(char *str, unsigned int i);
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
+if (s1 == NULL)
+s1 = "";
+if (s2 == NULL)
+s2 = "";
+
 unsigned int s1_len = _strlen(s1, 0) - 1;
 unsigned int s2_len = _strlen(s2, 0);
 unsigned int len = 0, i;
