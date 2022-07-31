@@ -35,7 +35,7 @@ if (s == NULL)
 return (NULL);
 }
 
-for (i = 0; str[i] != '\0'; i++)
+for (i = 0; i < str_len; i++)
 {
 s[i] = str[i];
 }
