@@ -37,7 +37,7 @@ for (i = 0; s2[i] != '\0' ; i++)
 {
 s[s1_len + i] = s2[i];
 }
-
+s[s1_len + i] = '\0';
 
 return (s);
 }
