@@ -21,7 +21,7 @@ while (str[str_len] != '\0')
 str_len++;
 }
 
-s = malloc(str_len *sizeof(*s));
+s = malloc(str_len *sizeof(char));
 
 if (str == NULL)
 {
