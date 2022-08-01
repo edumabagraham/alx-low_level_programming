@@ -17,7 +17,7 @@ char *s;
 int str_len = 0;
 int i;
 
-int l = length(str, 0);
+
 while (str[str_len] != '\0')
 {
 str_len++;
