@@ -17,6 +17,10 @@ char *s;
 int str_len = 0;
 int i;
 
+if (str == NULL)
+{
+return (NULL);
+}
 
 while (str[str_len] != '\0')
 {
@@ -24,15 +28,9 @@ str_len++;
 }
 str_len++;
 
+
 s = malloc(str_len *sizeof(char));
 
-if (str == NULL)
-{
-return (NULL);
-}
-
-else
-{
 if (s == NULL)
 {
 return (NULL);
@@ -42,8 +40,5 @@ for (i = 0; i < str_len; i++)
 {
 s[i] = str[i];
 }
-}
-
 return (s);
-free(s);
 }
