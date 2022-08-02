@@ -3,6 +3,7 @@
   "files.associations": {
     "type_traits": "c",
     "algorithm": "c",
-    "main.h": "c"
+    "main.h": "c",
+    "dog.h": "c"
   }
 }

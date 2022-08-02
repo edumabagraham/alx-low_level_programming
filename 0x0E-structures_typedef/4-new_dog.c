@@ -1,5 +1,6 @@
-#include "dog.h"
+#include <stdio.h>
 #include <stdlib.h>
+#include "dog.h"
 
 /**
  * _strlen - returns the length of a
@@ -75,7 +76,7 @@ if (newDog->owner == NULL)
 {
 free(newDog);
 free(newDog->name);
-return(NULL);
+return (NULL);
 }
 
 _strcpy(newDog->name, name);
