@@ -11,7 +11,7 @@
 
 int _strlen(char *s)
 {
-int i;
+int i = 0;
 while (s[i] != '\0')
 {
 i++;
@@ -35,7 +35,7 @@ len = _strlen(src);
 while (i < len)
 {
 dest[i] = src[i];
-dest++;
+i++;
 }
 dest[i] = '\0';
 
@@ -53,15 +53,33 @@ return (dest);
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *newDog;
+int len1, len2;
+
+len1 = _strlen(name);
+len2 = _strlen(owner);
+
 newDog = malloc(sizeof(dog_t));
 
 if (newDog == NULL)
+return (NULL);
+
+newDog->name = malloc((len1 + 1) * sizeof(char));
+if (newDog->name == NULL)
 {
+free(newDog);
 return (NULL);
 }
 
-newDog->name = name;
-newDog->owner=owner;
+newDog->owner = malloc((len2 + 1) * sizeof(char));
+if (newDog->owner == NULL)
+{
+free(newDog);
+free(newDog->name);
+return(NULL);
+}
+
+_strcpy(newDog->name, name);
+_strcpy(newDog->owner, owner);
 newDog->age = age;
 
 return (newDog);
