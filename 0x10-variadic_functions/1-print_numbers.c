@@ -21,22 +21,14 @@ va_start(args, n);
 for (i = 0; i < n; i++)
 {
 int v = va_arg(args, int);
-if (i == n - 1)
-printf("%d\n", v);
-
-else
-{
-if (separator == NULL)
-{
 printf("%d", v);
-}
-
-else
+if (separator && i < n - 1)
 {
-printf("%d%s", v, separator);
+printf("%s", separator);
 }
 }
-}
+printf("\n");
 va_end(args);
 }
+
 
