@@ -2,9 +2,9 @@
 #include <stdarg.h>
 
 /**
- * print_numbers - print numbers with seperator
+ * print_numbers - print numbers with separator
  *
- * @seperator: string to be printed between
+ * @separator: string to be printed between
  * numbers
  * @n: number of integers passed to the
  * function
@@ -12,7 +12,7 @@
  * Return: Nothing
  */
 
-void print_numbers(const char *seperator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 va_list(args);
 unsigned int i;
@@ -26,16 +26,17 @@ printf("%d\n", v);
 
 else
 {
-if (seperator == NULL)
+if (separator == NULL)
 {
 printf("%d", v);
 }
 
 else
 {
-printf("%d%s", v, seperator);
+printf("%d%s", v, separator);
+}
+}
+}
+va_end(args);
 }
 
-}
-}
-}
