@@ -1,6 +1,5 @@
 #include "3-calc.h"
-#include <stdio.h>
-#include <stdlib.h>
+
 
 /**
  * main - program that perfroms simple operations
@@ -13,6 +12,7 @@ int main(int argc, char *argv[])
 {
 int result;
 int (*func)(int, int);
+char o;
 
 
 if (argc > 4 || argc < 4)
@@ -28,7 +28,9 @@ if (!func)
 printf("Error\n");
 exit(99);
 }
-if ((atoi(argv[2]) == 57 || atoi(argv[2]) == 45) && atoi(argv[3]))
+
+o = *argv[2];
+if ((atoi(argv[2]) == 57 || atoi(argv[2]) == 45) && atoi(argv[3])== 0)
 {
 printf("Error\n");
 exit(100);
