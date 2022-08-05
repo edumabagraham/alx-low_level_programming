@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 /**
  * int_index - searches for an integer
  *
@@ -36,7 +34,15 @@ break;
 }
 }
 
-count != 0 ? (i = i) : (i = -1);
+/*
+*count != 0 ? (i = i) : (i = -1);
+*/
+if (count != 0)
+i = i;
+
+else
+i = -1;
+
 
 return (i);
 }
