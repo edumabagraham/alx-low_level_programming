@@ -1,5 +1,5 @@
 #include "3-calc.h"
-
+#include <stdlib.h>
 
 /**
  * main - program that perfroms simple operations
