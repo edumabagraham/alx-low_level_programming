@@ -30,7 +30,7 @@ exit(99);
 }
 
 o = *argv[2];
-if ((atoi(argv[2]) == 57 || atoi(argv[2]) == 45) && atoi(argv[3])== 0)
+if ((o == '/' || o == '%') && atoi(argv[3]) == 0)
 {
 printf("Error\n");
 exit(100);
