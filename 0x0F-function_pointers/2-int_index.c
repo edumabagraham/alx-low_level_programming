@@ -7,44 +7,19 @@
  * to compare values
  * Return: int
  */
+
 int int_index(int *array, int size, int (*cmp)(int))
 {
-int i, cmp_value, count = 0;
+int i;
 
-/*
- * check if all the parameters are
- * have been provided.
- */
-
-if (size <= 0)
-{
-return (-1);
-}
-
-else
+if (array && cmp)
 {
 for (i = 0; i < size; i++)
 {
-cmp_value = cmp(array[i]);
-if (cmp_value != 0)
-{
-count++;
-break;
-}
-}
-}
-
-/*
-*count != 0 ? (i = i) : (i = -1);
-*/
-if (count != 0)
-i = i;
-
-else
-i = -1;
-
-
+if (cmp(array[i]) != 0)
 return (i);
 }
+}
 
-
+return (-1);
+}
