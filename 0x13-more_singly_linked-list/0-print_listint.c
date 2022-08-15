@@ -11,15 +11,16 @@
 
 int print_listint(const listint_t *h)
 {
-    int count = 0;
-    const listint_t *tmp = h;
+int count = 0;
+const listint_t *tmp = h;
 
-    while (tmp != NULL)
-    {
-        printf("%d\n", tmp->n);
-        tmp = tmp->next;
-        count++;
-    }
-    
-    return (count);
+while (tmp != NULL)
+{
+printf("%d\n", tmp->n);
+tmp = tmp->next;
+count++;
 }
+
+return (count);
+}
+
