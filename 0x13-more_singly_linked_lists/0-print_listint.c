@@ -14,11 +14,11 @@ int print_listint(const listint_t *h)
 int count = 0;
 const listint_t *tmp = h;
 
-while (tmp != NULL)
+while (tmp)
 {
 printf("%d\n", tmp->n);
-tmp = tmp->next;
 count++;
+tmp = tmp->next;
 }
 
 return (count);
