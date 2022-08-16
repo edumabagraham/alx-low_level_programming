@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "lists.h"
 
 /**
@@ -9,16 +8,15 @@
  * Return: the number of nodes
  */
 
-int print_listint(const listint_t *h)
+size_t print_listint(const listint_t *h)
 {
-int count = 0;
-const listint_t *tmp = h;
+size_t count = 0;
 
-while (tmp)
+while (h)
 {
-printf("%d\n", tmp->n);
+printf("%d\n", h->n);
 count++;
-tmp = tmp->next;
+h = h->next;
 }
 
 return (count);
