@@ -15,16 +15,15 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 unsigned int count = 0;
 listint_t *tmp = head;
 
-while (tmp->next != NULL)
+while (tmp)
 {
-
 count++;
 if ((count - 1) == index)
-tmp = tmp;
-else
-return (NULL);
+{
+return (tmp);
+}
 tmp = tmp->next;
 }
 
-return (tmp);
+return (NULL);
 }
