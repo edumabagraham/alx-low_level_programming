@@ -1,4 +1,0 @@
-if ((count - 1) == index)
-tmp = tmp;
-else
-return (NULL);
