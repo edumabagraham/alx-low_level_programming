@@ -1,7 +1,6 @@
 #include "lists.h"
 #include <stdlib.h>
 
-
 /**
  * insert_nodeint_at_index - returns the nth node of
  * a linked list
@@ -19,7 +18,7 @@ listint_t *tmp = *head;
 listint_t *new_node = malloc(sizeof(listint_t));
 unsigned int count = 0;
 
-if (!new_node)
+if (!new_node || !head)
 return (NULL);
 
 new_node->n = n;
