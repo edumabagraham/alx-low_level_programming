@@ -23,6 +23,15 @@ return (NULL);
 
 new_node->n = n;
 
+if (count == idx)
+{
+new_node->next = *head;
+*head = new_node;
+return (new_node);
+}
+
+else
+{
 while (tmp)
 {
 if ((idx - count) == 1)
@@ -35,8 +44,11 @@ return (new_node);
 count++;
 tmp = tmp->next;
 }
+}
+
 
 return (NULL);
 }
+
 
 
