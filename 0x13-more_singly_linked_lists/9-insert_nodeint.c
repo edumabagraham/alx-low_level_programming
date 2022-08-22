@@ -30,8 +30,7 @@ new_node->next = *head;
 return (new_node);
 }
 
-else
-{
+
 while (tmp)
 {
 if ((idx - count) == 1)
@@ -44,7 +43,7 @@ return (new_node);
 count++;
 tmp = tmp->next;
 }
-}
+
 
 
 return (NULL);
